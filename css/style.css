@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+}
+
+/* En la raiz del css puedo crear variables y asignarles los colores que usare en toda la web, o al menos los principales. 
+De este modo si se quiere cambiar los colores, por que no le gustan al cliente, o por un rebranding por ejemplo, será sencillo 
+modificar los colores principales en todas las páginas de la web */
+:root {
+  --colorCorp1: #6a533f;
+}
+
+h1 {
+  padding: 20px 0px;
+  font-size: 60px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 30px;
+  text-align: center;
+}
+
+header {
+  position: relative;
+}
+
+#logo_header {
+  height: 200px;
+  position: absolute;
+  top: 50px;
+  left: 400px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  border-bottom: 5px solid;
+  background-color: transparent;
+}
+
+nav p {
+  padding: 10px;
+}
+
+nav p a {
+  color: black;
+  text-decoration: none;
+  font-size: 24px;
+}
+
+nav p a:hover {
+  border-block: 2px solid;
+  font-size: 28px;
+}
+
+.container_nav {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+#menu {
+  height: 24;
+  width: 24;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+}
+
+#logo_menu {
+  padding: 1px;
+}
+
+#active {
+  border-bottom: 2px solid;
+}
+
+.container_nav p {
+  font-size: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.container_nav img {
+  height: 32px;
+  width: 32px;
+}
+
+.search_bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 150%;
+}
+
+.search_bar input{
+  width:93%;
+}
+
+.container_main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px 0;
+}
+
+.card {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.card img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+#logosrrss {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+#logosrrss a img {
+  padding: 5px;
+}
+
+footer {
+  background-color: var(--colorCorp1);
+  padding: 20px 0;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+footer > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer a {
+  text-decoration: none;
+}
